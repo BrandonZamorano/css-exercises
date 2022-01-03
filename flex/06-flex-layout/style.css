@@ -5,6 +5,11 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: space-between; */
 }
 
 img {
@@ -25,3 +30,45 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* My Solution */
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+ ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  gap: 1rem;
+}
+
+ ul li a {
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button {
+  padding:  .5em;
+}
+
+
+.footer {
+  background-color: #eee;
+}
+
